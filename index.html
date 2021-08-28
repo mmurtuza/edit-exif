@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <title>Exif Data Editor</title>
+    </head>
+
+    <body>
+
+        <!-- Empty Div to add the Inputs to edit via JS -->
+        <div class="container" id="main">
+            <div>
+                <h4>To edit image EXIF data select the image after editing press download the image</h4>
+            </div>
+
+            <!-- to take image as input -->
+            <input type="file" name="SelectImage" id="files" accept="image/jpeg">
+            <din class="row">
+                <div class="col">
+                    <form id="mainForm" name='mainForm'></form>
+                </div>
+                <div class="col" id="imageCont">
+                    <p class="alert alert-warning">TileLength is compulsory</p>
+                </div>
+            </din>
+
+        </div>
+        <script src="./scripts/piexif.js"></script> <!-- piexif JS library to access and edit image exif data -->
+        <script src="./scripts/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    </body>
+
+</html>
